@@ -1,0 +1,115 @@
+@font-face {
+    font-family: Azonix;
+    src: url(../fonts/Azonix.otf)
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100vh;
+    font-family: sans-serif;
+    overflow: hidden;
+}
+
+main{
+  height: 84vh;
+}
+
+#mainHome {
+    height: 84vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#home {
+    flex: 1;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 1rem;
+}
+
+#home p {
+    font-family: Azonix;
+    padding-bottom: 0.5em;
+}
+
+#welcomeText {
+    font-size: 2em;
+}
+
+#nameText {
+    font-size: 2.5em;
+}
+
+#stackText {
+    padding-top: 1em;
+    color: #840eff;
+    font-size: 1.8em;
+}
+
+#imgProfile {
+    flex: 1;
+    min-width: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+#imgProfile img {
+    max-width: 35vw;
+    height: auto;
+    padding: 1rem;
+    object-fit: contain;
+}
+
+@media (max-width: 900px) {
+  html, body {
+    height: auto;
+    overflow: auto;
+  }
+
+  main {
+    flex-direction: column;       /* imagem e texto em coluna */
+    height: auto;                 /* deixa o conteúdo crescer */
+    padding: 1rem 0;
+  }
+
+  #home {
+    width: 100%;
+    padding: 1rem;
+  }
+
+  #welcome-text {
+    font-size: 1.5em;
+  }
+
+  #name-text {
+    font-size: 2em;
+  }
+
+  #stack-text {
+    font-size: 1.4em;
+  }
+
+  #img-profile {
+    width: 100%;
+    height: auto;
+    margin-top: 1rem;
+  }
+
+  #img-profile img {
+    max-width: 45vw;
+    padding: 0.5rem;
+  }
+}

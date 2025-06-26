@@ -1,0 +1,59 @@
+@font-face {
+    font-family: Designer;
+    src: url(../fonts/Designer.otf)
+}
+
+footer {
+  height: 6vh;
+  background-color: #840eff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer ul {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+footer li {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+footer li > * {
+  height: 100%;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 1.8rem;
+  font-family: "Designer";
+  color: #fff;
+  text-decoration: none;
+}
+
+footer li span {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+footer li img{
+    width: 25px;
+}
+
+footer li > *:hover img {
+  filter: brightness(0) saturate(100%) invert(20%) sepia(100%) saturate(5000%) hue-rotate(265deg) brightness(95%) contrast(100%);
+}
+
+footer li > *:hover {
+  background-color: #fff;
+  color: #840eff;
+  border-radius: 4px;
+}

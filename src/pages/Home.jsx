@@ -1,38 +1,24 @@
-import './Home.css'
-import { Link } from 'react-router-dom'
+import styles from './Home.module.css'
+import Header from './Header'
+import Footer from './Footer'
 import ImgLuiz from '../assets/jacoby-portfolio.png'
 
 const Home = () =>{
     return(
     <div>
-        <header>
-            <h1 id="name-header">&#x3c;Luiz Jacoby/&#x3e;</h1>
-            <nav id="menu">
-                <ul>
-                    <li><Link to="/"><span>Início</span></Link></li>
-                    <li><Link to="/about"><span>Sobre Mim</span></Link></li>
-                    <li><Link to="/projects"><span>Projetos</span></Link></li>
-                </ul>
-            </nav>
-        </header>
-    
-        <main>
-        <section id="home">
-            <p id="welcome-text">Bem-vindo! Me chamo</p>
-            <p id="name-text">Luiz Jacoby</p>
-            <p id="csharp-text">Desenvolvedor Full-Stack</p>
+        <Header/>
+        <main id={styles.mainHome}>
+        <section id={styles.home}>
+            <p id={styles.welcomeText}>Bem-vindo! Me chamo</p>
+            <p id={styles.nameText}>Luiz Jacoby</p>
+            <p id={styles.stackText}>Desenvolvedor Full-Stack</p>
         </section>
-        <section id="img-profile">
+        <section id={styles.imgProfile}>
             <img src={ImgLuiz} alt="Foto de Perfil"/>
         </section>
         </main> 
 
-        <footer>
-            <ul>
-                <li><Link to="https://github.com/SrJacoby" target="_blank"><span>GitHub</span></Link></li>
-                <li><Link to="https://www.linkedin.com/in/luiz-jacoby/" target="_blank"><span>Linkedin</span></Link></li>
-            </ul>
-        </footer>
+        <Footer/>
     </div>
     )
 
