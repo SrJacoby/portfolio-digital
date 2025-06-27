@@ -79,9 +79,9 @@ main{
     overflow: auto;
   }
 
-  main {
-    flex-direction: column;       /* imagem e texto em coluna */
-    height: auto;                 /* deixa o conteúdo crescer */
+  #mainHome {
+    flex-direction: column;       
+    height: auto;                
     padding: 1rem 0;
   }
 
@@ -90,25 +90,25 @@ main{
     padding: 1rem;
   }
 
-  #welcome-text {
+  #welcomeText {
     font-size: 1.5em;
   }
 
-  #name-text {
+  #nameText {
     font-size: 2em;
   }
 
-  #stack-text {
+  #stackText {
     font-size: 1.4em;
   }
 
-  #img-profile {
+  #imgProfile {
     width: 100%;
     height: auto;
     margin-top: 1rem;
   }
 
-  #img-profile img {
+  #imgProfile img {
     max-width: 45vw;
     padding: 0.5rem;
   }
