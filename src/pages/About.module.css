@@ -1,27 +1,27 @@
-#mainAbout {
+.mainAbout {
   display: flex;
   flex-direction: column;
   padding: 2rem 1rem;
   font-family: sans-serif;
 }
 
-#mainAbout p {
+.mainAbout p {
   text-align: justify;
   line-height: 1.6;
   margin-bottom: 1rem;
 }
 
-#mainAbout h2 {
+.mainAbout h2 {
   color: #840eff;
   font-family: Designer;
   margin-bottom: 0.5rem;
 }
 
-#listTech, #listLanguages, #listFormations{
+.listTech, .listLanguages, .listFormations{
   padding-left: 1.5rem;
   margin: 0.5rem 0 0 0;
 }
 
-#listTech li, #listLanguages li, #listFormations li {
+.listTech li, .listLanguages li, .listFormations li {
   margin-bottom: 0.4rem;
 }

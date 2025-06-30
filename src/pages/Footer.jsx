@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
-import LinkedInLogo from '../assets/icons8-linkedin-50.png'
-import GitHubLogo from '../assets/icons8-github-50.png'
+import LinkedInLogo from '../assets/linkedin.svg'
+import GitHubLogo from '../assets/github.svg'
 import './Footer.module.css'
 
 const Footer = () => {

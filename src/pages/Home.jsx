@@ -7,13 +7,13 @@ const Home = () =>{
     return(
     <div>
         <Header/>
-        <main id={styles.mainHome}>
-        <section id={styles.home}>
-            <p id={styles.welcomeText}>Bem-vindo! Me chamo</p>
-            <p id={styles.nameText}>Luiz Jacoby</p>
-            <p id={styles.stackText}>Desenvolvedor Full-Stack</p>
+        <main className={styles.mainHome}>
+        <section className={styles.home}>
+            <p className={styles.welcomeText}>Bem-vindo! Me chamo</p>
+            <p className={styles.nameText}>Luiz Jacoby</p>
+            <p className={styles.stackText}>Desenvolvedor Full-Stack</p>
         </section>
-        <section id={styles.imgProfile}>
+        <section className={styles.imgProfile}>
             <img src={ImgLuiz} alt="Foto de Perfil"/>
         </section>
         </main> 

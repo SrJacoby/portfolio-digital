@@ -19,7 +19,7 @@ main{
   height: 84vh;
 }
 
-#mainHome {
+.mainHome {
     height: 84vh;
     display: flex;
     flex-direction: row;
@@ -27,7 +27,7 @@ main{
     justify-content: center;
 }
 
-#home {
+.home {
     flex: 1;
     min-width: 300px;
     display: flex;
@@ -38,26 +38,26 @@ main{
     padding: 1rem;
 }
 
-#home p {
+.home p {
     font-family: Azonix;
     padding-bottom: 0.5em;
 }
 
-#welcomeText {
+.welcomeText {
     font-size: 2em;
 }
 
-#nameText {
+.nameText {
     font-size: 2.5em;
 }
 
-#stackText {
+.stackText {
     padding-top: 1em;
     color: #840eff;
     font-size: 1.8em;
 }
 
-#imgProfile {
+.imgProfile {
     flex: 1;
     min-width: 250px;
     display: flex;
@@ -66,7 +66,7 @@ main{
     height: 100%;
 }
 
-#imgProfile img {
+.imgProfile img {
     max-width: 35vw;
     height: auto;
     padding: 1rem;
@@ -79,36 +79,36 @@ main{
     overflow: auto;
   }
 
-  #mainHome {
+  .mainHome {
     flex-direction: column;       
     height: auto;                
     padding: 1rem 0;
   }
 
-  #home {
+  .home {
     width: 100%;
     padding: 1rem;
   }
 
-  #welcomeText {
+  .welcomeText {
     font-size: 1.5em;
   }
 
-  #nameText {
+  .nameText {
     font-size: 2em;
   }
 
-  #stackText {
+  .stackText {
     font-size: 1.4em;
   }
 
-  #imgProfile {
+  .imgProfile {
     width: 100%;
     height: auto;
     margin-top: 1rem;
   }
 
-  #imgProfile img {
+  .imgProfile img {
     max-width: 45vw;
     padding: 0.5rem;
   }
