@@ -1,27 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100vh;
+    font-family: sans-serif;
+}
+
 .mainAbout {
   display: flex;
   flex-direction: column;
   padding: 2rem 1rem;
   font-family: sans-serif;
+  height: 84vh;
 }
 
 .mainAbout p {
+  margin-bottom: 2em;
+}
+
+.aboutText{
+  position: relative;
+  width: 60%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 1.5rem;
+  border: 2px dashed #840eff;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  text-align: justify;
+  font-style: italic;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+.aboutText::before {
+  content: "“";
+  font-size: 5rem;
+  color: #840eff;
+  position: absolute;
+  top: -25px;
+  left: 15px;
+}
+
+.infosLists{
+  display: flex;
+  justify-content: center;
+  width: 70%;
+  margin: 0 auto;
+  gap: 2rem;
+  flex-wrap: wrap; 
+}
+
+.infosLists p {
   text-align: justify;
   line-height: 1.6;
   margin-bottom: 1rem;
 }
 
-.mainAbout h2 {
+.infosLists h2 {
   color: #840eff;
   font-family: Designer;
   margin-bottom: 0.5rem;
+  text-align: center;
 }
 
-.listTech, .listLanguages, .listFormations{
-  padding-left: 1.5rem;
-  margin: 0.5rem 0 0 0;
+.infosLists li{
+  list-style-type: none;
 }
 
-.listTech li, .listLanguages li, .listFormations li {
-  margin-bottom: 0.4rem;
+.listTech h2, .listLanguages h2, .listFormations h2{
+  margin-bottom: 15px;
+}
+
+.listTech ul{
+  display: grid;
+  flex-wrap: wrap;
+  grid-template-columns: repeat(3, auto);
+  align-items: center;
+  gap: 12px;
+  justify-content: center;
+}
+
+.listTech img{
+  max-width: 35px;
+}
+
+.listLanguages ul{
+  max-width: 150px;
+  gap: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.listLanguages li {
+  display: flex;
+  align-items: center;
+  gap: 8px;            
+  font-size: 0.95rem;
+}
+
+.listLanguages img{
+  max-width: 35px;
+  margin-left: 15px;
+}
+
+.listFormations{
+  text-align: center;
+}
+
+.listFormations ul {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 0;
+  margin: 0;
+}
+
+.listFormations li {
+  padding-bottom: 8px;
+  border-bottom: 1px dashed #ccc;
+}
+
+.listFormations li:last-child {
+  border-bottom: none;
+}
+
+
+@media (max-width: 900px ){
+
+  .mainAbout{
+        overflow: auto;
+        height: auto;
+    }
 }
