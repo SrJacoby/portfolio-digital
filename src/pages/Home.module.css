@@ -10,9 +10,8 @@
 }
 
 html, body {
-    height: 100vh;
+    min-height: 100vh;
     font-family: sans-serif;
-    overflow: hidden;
 }
 
 main{
@@ -76,7 +75,6 @@ main{
 @media (max-width: 900px) {
   html, body {
     height: auto;
-    overflow: auto;
   }
 
   .mainHome {
@@ -111,5 +109,15 @@ main{
   .imgProfile img {
     max-width: 45vw;
     padding: 0.5rem;
+  }
+}
+
+@media (max-height: 700px) {
+  html, body {
+    height: auto;
+  }
+
+  .mainHome {
+    height: auto;
   }
 }

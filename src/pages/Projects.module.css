@@ -97,3 +97,11 @@
         max-width: 75%;
     }
 }
+
+@media (max-height: 700px) {
+  .mainProjects {
+    height: auto;
+    overflow-y: auto;
+    padding-bottom: 2rem;
+  }
+}

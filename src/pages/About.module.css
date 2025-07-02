@@ -14,7 +14,7 @@ html, body {
   flex-direction: column;
   padding: 2rem 1rem;
   font-family: sans-serif;
-  height: 84vh;
+  min-height: 84vh;
 }
 
 .mainAbout p {
@@ -128,10 +128,17 @@ html, body {
 }
 
 
-@media (max-width: 900px ){
+@media (max-width: 1200px ){
 
   .mainAbout{
-        overflow: auto;
         height: auto;
     }
+}
+
+@media (max-height: 700px) {
+  .mainAbout {
+    height: auto;
+    overflow-y: auto;
+    padding-bottom: 2rem;
+  }
 }
