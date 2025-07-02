@@ -120,4 +120,8 @@ main{
   .mainHome {
     height: auto;
   }
+
+  .imgProfile {
+    width: 200px;
+  }
 }
