@@ -107,7 +107,7 @@ main{
   }
 
   .imgProfile img {
-    max-width: 45vw;
+    max-width: 60vw;
     padding: 0.5rem;
   }
 }
@@ -119,9 +119,5 @@ main{
 
   .mainHome {
     height: auto;
-  }
-
-  .imgProfile {
-    width: 200px;
   }
 }
