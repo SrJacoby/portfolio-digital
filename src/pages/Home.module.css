@@ -106,10 +106,19 @@ main{
   }
 
   .imgProfile img {
-    max-width: 70vw;
+    max-width: 60vw;
     padding: 0rem;
     margin-top: 1rem;
   }
+}
+
+@media (max-width: 500px){
+  .imgProfile img {
+    max-width: 70vw;
+    padding: 0rem;
+    margin-top: 0.2rem;
+  }
+
 }
 
 @media (max-height: 700px) {
