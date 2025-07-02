@@ -103,12 +103,12 @@ main{
   .imgProfile {
     width: 100%;
     height: auto;
-    margin-top: 0.5rem;
   }
 
   .imgProfile img {
     max-width: 60vw;
-    padding: 0.5rem;
+    padding: 0rem;
+    margin-top: 1rem;
   }
 }
 
