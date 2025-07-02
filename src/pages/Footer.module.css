@@ -60,7 +60,6 @@ footer li > *:hover {
 
 @media (max-height: 400px) {
   footer{
-    min-height: 50px;        
     height: auto;              
     padding: 0.5rem 1rem;
   }
